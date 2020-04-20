@@ -15,13 +15,15 @@ public class week5_multi {
 			System.out.println();
 		for(int k = 1; k<10; k++) {
 			for(int l = 6; l<10; l++) {
-				System.out.print(l + " * " + k + " = " + k*l + ",");
+				if(l*k == 81) {
+					System.out.print(l + " * " + k + " = " + l*k);
+				} else {	
+					System.out.print(l + " * " + k + " = " + k*l + ",");
+				
+				}
 				System.out.print('\t');
 			}
 			System.out.println();
 		}
-		
-		
 	}
-
 }
